@@ -1,3 +1,1 @@
-# five-game-arcade-guessthenumber
-
-Submit your code
+# Code Received and Tested
