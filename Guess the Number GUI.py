@@ -129,10 +129,12 @@ app = wx.App()
 app.MainLoop()
 the_number = random.randint(1, 100)
 response = "First guess please" 
+y=0
 for guess in range(7):
+    y+=1
     x = ask(message=response)
     if str(x) == str(the_number):
-        response=str(x)+" is correct. Press enter or OK to end game. "
+        response=str(x)+" is correct. It took you "+(str(y))+" guesses. Press enter or OK to end game. "
     elif int(x) > the_number:
         response=str(x)+" Guess lower. "
     elif int(x) <the_number:
